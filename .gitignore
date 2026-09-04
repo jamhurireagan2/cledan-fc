@@ -1,0 +1,33 @@
+# Database configuration
+includes/config.php
+
+# Uploaded files
+uploads/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Log files
+*.log
+error_log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Composer
+vendor/
+composer.lock
+
+# Node modules
+node_modules/
