@@ -3,7 +3,7 @@
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'cledan_fc');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'CledanFc254');
 
 // Site configuration
 define('SITE_NAME', 'CLEDAN FC');
