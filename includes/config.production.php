@@ -1,12 +1,9 @@
 <?php
-// InfinityFree Production Database Configuration
-// YOUR ACTUAL CONNECTION DETAILS
-
-// Database connection
+// InfinityFree Production Configuration
 define('DB_HOST', 'sql310.infinityfree.com');
 define('DB_NAME', 'if0_42831320_cledanfc');
 define('DB_USER', 'if0_42831320');
-define('DB_PASS', 'CledanFc254'); // <- Replace with your actual password
+define('DB_PASS', 'CledanFc254'); // ← PUT THE CORRECT PASSWORD HERE
 
 // Site configuration
 define('SITE_NAME', 'CLEDAN FC');
@@ -20,7 +17,6 @@ define('STAFF_IMG_PATH', UPLOAD_PATH . 'staff/');
 define('NEWS_IMG_PATH', UPLOAD_PATH . 'news/');
 define('GALLERY_IMG_PATH', UPLOAD_PATH . 'gallery/');
 
-// Create directories if they don't exist
 function createUploadDirectories() {
     $dirs = [
         UPLOAD_PATH,
@@ -29,7 +25,6 @@ function createUploadDirectories() {
         NEWS_IMG_PATH,
         GALLERY_IMG_PATH
     ];
-    
     foreach ($dirs as $dir) {
         if (!is_dir($dir)) {
             @mkdir($dir, 0777, true);
@@ -38,14 +33,9 @@ function createUploadDirectories() {
 }
 createUploadDirectories();
 
-// Error reporting (disabled for production)
 error_reporting(0);
 ini_set('display_errors', 0);
-
-// Timezone
 date_default_timezone_set('Africa/Nairobi');
-
-// Session settings
 ini_set('session.cookie_httponly', 1);
 ini_set('session.use_only_cookies', 1);
 ?>
