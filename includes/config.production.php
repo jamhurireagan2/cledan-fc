@@ -6,7 +6,7 @@
 define('DB_HOST', 'sql310.infinityfree.com');
 define('DB_NAME', 'if0_42831320_cledanfc');
 define('DB_USER', 'if0_42831320');
-define('DB_PASS', 'YOUR_PASSWORD_HERE'); // <- Replace with your actual password
+define('DB_PASS', 'CledanFc254'); // <- Replace with your actual password
 
 // Site configuration
 define('SITE_NAME', 'CLEDAN FC');
